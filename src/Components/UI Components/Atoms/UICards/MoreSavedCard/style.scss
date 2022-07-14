@@ -1,0 +1,77 @@
+// =============== Project SCSS Variabls ===============
+@use "Styles/appVariables.scss" as *;
+
+.moreSavedcard {
+  
+  margin-top: 10px;
+  border: 5px solid $primary_light_250;
+  border-radius: 15px;
+  flex: 1;
+  height: 100px;
+  max-width: 100px;
+  min-width: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+  img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+  .link {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: $primary_color;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .moreSavedcard {
+    max-width: 100px;
+    min-width: 100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .moreSavedcard {
+    max-width: 2000px;
+    min-width: 200px;
+  }
+}
+@media screen and (max-width: 465px) {
+  .moreSavedcard {
+    min-width: 150px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .moreSavedcard {
+    min-width: 130px;
+  }
+}
+@media screen and (max-width: 326px) {
+  .moreSavedcard {
+    min-width: 100px;
+  }
+}
+@media screen and (max-width: 235px) {
+  .moreSavedcard {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 265px) {
+  .moreSavedcard {
+    min-width: 70px;
+  }
+}
+@media screen and (max-width: 200px) {
+  .moreSavedcard {
+    min-width: 100%;
+  }
+}

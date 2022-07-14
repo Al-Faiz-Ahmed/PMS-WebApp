@@ -1,0 +1,16 @@
+// =============== Project SCSS Variabls ===============
+@use "Styles/appVariables.scss" as *;
+
+.skillSetCard {
+  margin-top: 20px;
+  background: linear-gradient(to right, $primary_gradient_one, #ffa95f);
+  padding: 18px 0px;
+  padding-left: 10px;
+  border-radius: 10px;
+  color:#fff;
+  position: relative;
+  h5{
+    text-transform: capitalize;
+  }
+  
+}

@@ -8,6 +8,11 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended"
     ],
+    "settings":{
+        "react":{
+            "version":"detect"
+        }
+    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -19,6 +24,7 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "semi": ["error", "always"]
+        "semi": ["error", "always"],
+        "react/prop-types": 0
     }
 };

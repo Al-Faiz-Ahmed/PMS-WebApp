@@ -1,0 +1,38 @@
+@use "Styles/appVariables.scss" as *;
+
+.searchBar {
+  width: 280px;
+  margin-left: auto;
+  display: flex;
+  button {
+    all: unset;
+    background-color: #006b5e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 38px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .searchBar {
+    button {
+      &:hover {
+        background-color: $secondary_color;
+        opacity: 0.8;
+      }
+      &:active {
+        background-color: $secondary_400;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .searchBar {
+    width: 100%;
+  }
+}

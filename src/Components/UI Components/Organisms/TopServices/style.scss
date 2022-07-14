@@ -1,0 +1,83 @@
+// =============== Project SCSS Variabls ===============
+@use "Styles/appVariables.scss" as *;
+.topSavedPassword *{
+  user-select: none;
+}
+.topUsedServiceHeading {
+  color: $primary_color;
+}
+
+.topSavedPassword {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  .topSavedUiCard {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1282px) {
+  .topSavedPassword {
+    > div {
+      flex: 1;
+      min-width: 274px;
+    }
+    .helpingInAlignment {
+      display: none;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1282px) {
+  .topSavedPassword {
+    > div {
+      max-width: 407px;
+      flex: 1;
+      min-width: 274px;
+    }
+    .helpingInAlignment {
+      display: block;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+@media screen and (max-width: 868px) {
+  .topSavedPassword {
+    padding: 15px 0px;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: calc(100vw - 260px);
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    > div {
+      min-width: 350px;
+    }
+    .helpingInAlignment {
+      display: none;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topSavedPassword {
+    width: calc(100vw - 60px);
+
+  }
+}
+@media screen and (max-width: 576px) {
+  .topSavedPassword {
+    width: calc(100vw - 50px);
+
+    > div {
+      min-width: 280px;
+    }
+  }
+}

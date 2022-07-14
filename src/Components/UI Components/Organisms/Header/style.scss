@@ -1,0 +1,125 @@
+@use "Styles/appVariables.scss" as *;
+
+.dashboardHeader {
+  display: flex;
+  align-items: center;
+  .headingSection {
+    flex: 1.5;
+  }
+  .searchBox {
+    position: relative;
+    
+  }
+  .searchResult {
+    background: $secondary_100;
+    margin-top: 5px;
+    border-radius: 6px;
+    position: absolute;
+    width: 100%;
+    border: 1px solid $secondary_color;
+
+    // border: 1px solid $primary_color;
+    > ul {
+      list-style-type: none;
+      
+      // padding: 8px;
+      li{
+        // border-radius: 6px;
+        // background-color: $secondary_100;
+        padding: 8px ;
+        color: $secondary_400;
+      }
+      li:not(:last-child){
+        margin-bottom: 8px;
+        border-bottom: 1px solid $secondary_color;
+      }
+    }
+  }
+  .mobileHeading {
+    display: none;
+  }
+  .HamBurger {
+    display: none;
+    margin-left: 15px;
+  }
+  .mobileSearchBar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboardHeader {
+    display: flex;
+    align-items: center;
+    .headingSection {
+      max-width: fit-content;
+    }
+    .laptopHeading {
+      display: none;
+    }
+    .mobileHeading {
+      display: block;
+      .backButton {
+        all: unset;
+        cursor: pointer;
+      }
+    }
+    .searchBox {
+      position: static;
+      margin-left: 15px;
+      flex: 1;
+    }
+    .searchResult {
+      position: absolute;
+      width: calc(100% - 40px);
+      left: 20px;
+    }
+    .HamBurger {
+      cursor: pointer;
+      display: block;
+      outline: none;
+      border: none;
+      background-color: transparent;
+    }
+    .mobileSearchBar {
+      display: block;
+    }
+    .mobileSearchBar.default {
+      input {
+        display: none;
+      }
+      button {
+        padding: 6px 0;
+        margin-left: auto;
+        background-color: transparent;
+        path {
+          fill: $secondary_color;
+        }
+      }
+    }
+    .mobileSearchBar.active {
+      input {
+        display: block;
+      }
+      button {
+        margin-left: auto;
+        background-color: $secondary_color;
+        path {
+          fill: #fff;
+        }
+      }
+    }
+
+    .laptopSearchBar {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .searchResult {
+    position: absolute;
+    width: calc(100% - 30px) !important;
+    left: 15px !important;
+  }
+}

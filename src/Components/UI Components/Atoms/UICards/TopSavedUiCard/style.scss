@@ -1,0 +1,64 @@
+@use "Styles/appVariables.scss" as *;
+
+.topSavedUiCard {
+  padding: 20px;
+  border-radius: 20px;
+  background: $primary_light_100;
+  box-shadow: 0px 13px 10px -5px #ff770040, 0px 8px 16px -8px #ff77004d;
+  margin-left: 10px;
+  margin-right: 10px;
+  // &:first-child {
+  //   margin-left: 0px;
+  // }
+  // &:last-child {
+  //   margin-right: 0px;
+  // }
+
+  .serviceInformation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .iconImage {
+    border-radius: 15px;
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border: 5px solid $primary_light_250;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 65%;
+      height: 650%;
+      object-fit: contain;
+    }
+  }
+  .totalSaved {
+    margin-top: 25px;
+  }
+  .passwordQunatity {
+    margin-top: 5px;
+
+    color: $primary_color;
+  }
+  .progress {
+    margin-top: 25px;
+    background-color: $secondary_100;
+    height: 10px;
+    width: 100%;
+    border-radius: 50px;
+    position: relative;
+    .rangeInPercentage {
+      color: $secondary_color;
+      position: absolute;
+      right: 0;
+      top: -30px;
+    }
+    .range {
+      border-radius: 50px;
+      height: 100%;
+      background: linear-gradient(to right, $secondary_gradient_one, #76beb2);
+    }
+  }
+}

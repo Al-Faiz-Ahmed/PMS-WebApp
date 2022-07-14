@@ -1,0 +1,29 @@
+@use "Styles/appVariables.scss" as *;
+input.searchFeild,
+input.signup {
+  border-radius: 8px;
+  outline: none;
+  padding: 10px;
+}
+input.signup {
+  border: 1px solid #787e84;
+  color: $primary_color;
+  &:focus {
+    border-color: $primary_color;
+  }
+}
+
+input.searchFeild {
+  border: 1px solid $secondary_color;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: $secondary_color;
+  &::placeholder {
+    color: #95b6b2;
+  }
+}
+
+.fullwidth {
+  display: block;
+  width: 100%;
+}

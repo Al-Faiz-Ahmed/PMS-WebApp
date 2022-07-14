@@ -1,0 +1,115 @@
+// =============== Project SCSS Variabls ===============
+@use "Styles/appVariables.scss" as *;
+
+.form-Section {
+  margin-top: 30px;
+  h3 {
+    color: $primary_color;
+  }
+  form {
+    margin-top: 25px;
+    > div {
+      margin-top: 15px;
+      input {
+        margin-top: 5px;
+      }
+    }
+    .add-platform-button {
+      margin-top: 30px;
+    }
+    .image-section {
+      display: flex;
+      justify-content: center;
+
+      .image-picker {
+        // background: linear-gradient(#ffffffac);
+        // background-repeat: no-repeat !important;
+        // background-size: 100% !important;
+        // background-position: center !important;
+        background: transparent;
+        cursor: pointer;
+        width: 70pt;
+        height: 70pt;
+        border-radius: 8px;
+        border: 3px solid $primary_light_400;
+        h4 {
+          color:grey;
+        }
+        p {
+          font-size: 13px;
+          margin-top: 10px;
+          color: $primary_color;
+          font-weight: bold;
+        }
+        img{
+          width: 80%;
+          height: 80%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+.modal-image {
+  .svgName{
+    margin-top: 10px;
+    text-align: center;
+    color: $primary_color;
+  }
+  .image-picker-Section {
+    width: fit-content;
+    margin: 0 auto;
+    .imageContainer{
+      width: 70pt;
+      height: 70pt;
+      border-radius: 8px;
+      border: 3px solid $primary_light_400;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+      }
+    }
+    .image-picker {
+      cursor: pointer;
+      width: 70pt;
+      height: 70pt;
+      border-radius: 8px;
+      border: 3px solid $primary_light_400;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h4 {
+        opacity: 0.3;
+      }
+      p {
+        font-size: 13px;
+        margin-top: 10px;
+        color: $primary_color;
+        font-weight: bold;
+      }
+    }
+  }
+  .guide-Section{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-Section {
+    h3 {
+      text-align: center;
+    }
+  }
+  .image-section {
+    .image-picker-Section {
+      margin: auto;
+    }
+  }
+}

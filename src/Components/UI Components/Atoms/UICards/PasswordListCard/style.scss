@@ -1,0 +1,122 @@
+// =============== Project SCSS Variabls ===============
+@use "Styles/appVariables.scss" as *;
+
+.passwordList {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid $primary_light_400;
+  &:last-child {
+    border-bottom: 0px solid $primary_light_400;
+  }
+}
+.password,
+.username {
+  padding: 5px;
+  flex: 1;
+  > div {
+    position: relative;
+    padding: 10px;
+    background-color: $primary_light_250;
+    border-radius: 8px;
+    color: $primary_color;
+    button {
+      all: unset;
+      height: 100%;
+      padding-inline: 8px;
+      border-radius: 8px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary_color;
+
+      cursor: pointer;
+      &:nth-child(2) {
+        right: 45px;
+      }
+      svg path {
+        fill: $primary_light_400;
+      }
+      &:active {
+        color: #fff;
+        background-color: #cd6000;
+        svg path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+.editBtn {
+  width: fit-content;
+  padding: 5px;
+  > div {
+    height: 100%;
+    button {
+      all: unset;
+      border-radius: 8px;
+      background:$primary_light_250;
+      cursor: pointer;
+      height: 100%;
+      padding-inline: 8px;
+      svg path {
+        fill: $primary_light_400;
+      }
+      &:active {
+        color: #fff;
+        background-color: #cd6000;
+        svg path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .passwordList {
+    button {
+      &:hover {
+        color: #fff;
+        background-color: $primary_light_400;
+        svg path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .passwordList {
+    background-color: $primary_light_250;
+    border-radius: 8px;
+    border: none;
+    padding-bottom: 0px;
+    flex-direction: column;
+  }
+  .password,
+  .username {
+    padding: 5px;
+    flex: 1;
+    > div {
+      position: relative;
+      padding: 5px;
+      background: transparent;
+      border-radius: 0px;
+      // color: $primary_light_400;
+    }
+  }
+  .username {
+    > div {
+      padding-bottom: 12px;
+      border-bottom: 3px solid $primary_light_400;
+    }
+  }
+.editBtn {
+display: none;
+}
+}

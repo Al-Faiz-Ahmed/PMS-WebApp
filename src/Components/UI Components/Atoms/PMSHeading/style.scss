@@ -1,0 +1,25 @@
+.dashboardHeading {
+  font-size: clamp(24px, 2.4vw, 28px);
+}
+
+@media screen and (max-width: 996px) {
+  .dashboardHeading {
+    font-size: clamp(18px, 2.2vw, 24px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboardHeading {
+    font-size: 24px;
+    span {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .dashboardHeading {
+    span {
+      display: none;
+    }
+  }
+}

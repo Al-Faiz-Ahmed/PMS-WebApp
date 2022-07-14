@@ -1,10 +1,13 @@
-import React from 'react'
-import ReactRouter from './Navigation/reactRouter'
+import ContextProvider from "Context/context";
+import React from "react";
+import ReactRouter from "./Navigation/reactRouter";
 
 const App = () => {
   return (
-    <ReactRouter />
-    )
-}
+    <ContextProvider>
+      <ReactRouter />
+    </ContextProvider>
+  );
+};
 
-export default App
+export default App;

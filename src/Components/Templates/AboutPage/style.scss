@@ -1,0 +1,32 @@
+// =============== Project SCSS Variabls ===============
+@use "Styles/appVariables.scss" as *;
+
+.aboutSection {
+    margin-top: 40px;
+    word-break: normal;
+  h3 {
+    background: linear-gradient(to right,$primary_gradient_one, $primary_gradient_two);
+    width: fit-content;
+    color: white !important;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+}
+.feildSection {
+  margin-top: 15px;
+  &:nth-child(2) {
+    margin-top: 30px;
+  }
+  h4 {
+    color: $primary_color;
+  }
+  p {
+    word-break: normal;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: rgb(71, 71, 71);
+    a {
+      color: $secondary_color;
+    }
+  }
+}

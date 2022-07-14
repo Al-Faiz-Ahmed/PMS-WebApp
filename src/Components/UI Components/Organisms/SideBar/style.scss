@@ -1,0 +1,90 @@
+// =============== Project SCSS Variabls ===============
+@use "Styles/appVariables.scss" as *;
+.sidebar {
+  min-width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px 0px;
+  .user_info {
+    text-align: center;
+    p.user_name {
+      letter-spacing: 1px;
+      color: #fff;
+      margin-top: 10px;
+    }
+  }
+  .logoutButton {
+    margin-top: auto;
+  }
+}
+@media screen and (max-width: 996px) {
+  .sidebar {
+    min-width: 180px;
+  }
+  .user_info {
+    p.user_name {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sideBar_parent {
+    display: flex;
+    overflow-y: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateX(-100%);
+  }
+  .side-sibling {
+    width: 25%;
+  }
+  .sidebar {
+    z-index: 2;
+    background: $primary_color;
+    box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.12), 0 5px 13px 0 rgba(0, 0, 0, 0.22);
+    width: 75%;
+  }
+  .sideBar_parent.default {
+    transform: translateX(-100%);
+    animation: slideOut 0.5s linear forwards;
+  }
+  .sideBar_parent.active {
+    animation: slideIn 0.5s linear forwards;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logoutButton {
+    margin-top: auto;
+    margin-bottom: 60px;
+  }
+  .sidebar {
+    .user_info {
+      p.user_name {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

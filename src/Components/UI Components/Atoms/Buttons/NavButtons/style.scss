@@ -1,0 +1,47 @@
+@use "Styles/appVariables.scss" as *;
+
+.navButton {
+  outline: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 10px 0px 10px 20px;
+  border-radius: 10px;
+  p {
+    margin-left: 10px;
+    font-weight: bolder;
+  }
+}
+.navActiveButton {
+  background-color:#fff;
+  p {
+    color: $primary_color;
+  }
+}
+.navInActiveButton {
+  cursor: pointer;
+  background-color: transparent;
+  transition: .2s ease-in-out;
+  p {
+    color: #fff;
+  }
+}
+@media screen and (max-width: 996px) {
+  .navButton{
+    padding-left: 10px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navInActiveButton {
+
+    &:hover{
+      background-color: #cd6000;
+    }
+    &:active{
+      background-color: $primary_light_400;
+  
+    }
+  }
+}

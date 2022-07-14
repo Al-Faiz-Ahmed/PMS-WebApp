@@ -1,0 +1,44 @@
+// =============== Project SCSS Variabls ===============
+@use "Styles/appVariables.scss" as *;
+
+.baseSection {
+  display: flex;
+  margin-top: 40px;
+  .moreSavedSection {
+    flex: 1;
+    margin-right: 30px;
+    h3 {
+      color: $primary_color;
+    }
+  }
+  .aboutDesigner {
+    width: 300px;
+    h3 {
+      color: $primary_color;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .baseSection {
+    flex-direction: column;
+    .moreSavedSection {
+      margin-right: 0px;
+    }
+    .aboutDesigner {
+      margin-top: 40px;
+      width: 100%;
+    }
+
+
+
+   
+  }
+}
+
+
+.MoreSavedrow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}

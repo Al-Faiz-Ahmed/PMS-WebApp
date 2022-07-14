@@ -1,0 +1,136 @@
+// =============== Project SCSS Variabls ===============
+@use "Styles/appVariables.scss" as *;
+
+.main {
+  background-color: $primary_color;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loginSection {
+    border-radius: 15px;
+    width: 900px;
+    background-color: white;
+    padding: 60px;
+  }
+}
+
+.formSection {
+  margin-top: 80px;
+  display: flex;
+  > div {
+    flex: 1;
+  }
+}
+
+.form {
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  p.author {
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+}
+.relatedImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  img {
+    width: 350px;
+  }
+}
+
+// =============== styling for 997 px below screen ===============
+
+@media screen and (max-width: 996px) {
+  .loginSection {
+    margin: 0 20px;
+  }
+  .formSection {
+    > div {
+      padding: 0 10px;
+    }
+  }
+  .main {
+    .loginSection {
+      width: 768px;
+      padding: 40px;
+    }
+  }
+  .relatedImage {
+    img {
+      width: 350px;
+    }
+  }
+}
+// =============== styling for 768 px below screen ===============
+
+@media screen and (max-width: 768px) {
+  .main {
+    .loginSection {
+      overflow: hidden;
+      z-index: 1;
+      padding: 25px;
+      > h2 {
+        z-index: 5;
+        text-align: center;
+      }
+    }
+  }
+  .formSection {
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  .relatedImage {
+    filter: blur(5px);
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -12%;
+    z-index: -1;
+    img {
+      width: 500%;
+    }
+  }
+}
+// =============== styling for 576 px below screen ===============
+
+@media screen and (max-width: 576px) {
+  .main {
+    .loginSection {
+      margin: 0 13px;
+      padding: 25px 10px;
+    }
+  }
+  .formSection {
+    margin-top: 30px;
+  }
+  p {
+    word-break: break-all;
+  }
+  .relatedImage {
+    img {
+      width: 500%;
+    }
+  }
+}
+// =============== styling for 210 px below screen ===============
+
+@media screen and (max-width: 210px) {
+  .main {
+    .loginSection {
+      margin: 0 8px;
+      padding: 25px 5px;
+    }
+  }
+  .formSection {
+    > div {
+      padding: 5px;
+    }
+  }
+}

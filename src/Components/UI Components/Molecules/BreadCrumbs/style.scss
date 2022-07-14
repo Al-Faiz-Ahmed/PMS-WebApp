@@ -1,0 +1,20 @@
+// =============== Project SCSS Variabls ===============
+@use "Styles/appVariables.scss" as *;
+
+.breadCrumbs{
+    color: $primary_color;
+    a{
+        color: $primary_color;
+        text-transform: capitalize;
+        text-decoration: none;
+        &:hover{
+            text-decoration:underline;
+            
+        }
+    }
+    span{
+        text-transform: capitalize;
+        cursor: auto;
+        color: #9FA0A0;
+    }
+}

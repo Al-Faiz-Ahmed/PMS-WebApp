@@ -1,0 +1,23 @@
+.skillSection {
+  margin-top: 20px;
+  overflow-y: hidden;
+  height: 200px;
+}
+
+.first{
+  animation: first 2s linear forwards ;
+}
+@keyframes first {
+  100%{
+    transform: translateY(-80px);
+  }
+}
+.second{
+  animation: second 2s linear forwards ;
+}
+@keyframes second {
+  
+  100%{
+    transform: translateY(-80px) ;
+  }
+}

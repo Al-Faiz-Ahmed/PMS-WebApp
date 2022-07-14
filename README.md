@@ -3,10 +3,11 @@
 
 An UI/UX or Frontend based Webapp for storing passwords on your local storage
 
-**"Please do not save your passwords on local storage, as it is use for testing purpose"** 
 
 ## Developed with React JS  
- 
+## Sanpshots.
+![thumbnail](./public/Assets/Images/thumbnail.jpg)
+
 ## Technologies.
 
 1. Context Api 
@@ -19,7 +20,7 @@ An UI/UX or Frontend based Webapp for storing passwords on your local storage
 Clone Github's Repo on your local machine.
 
 ```
- git clone <Repo-URL> PMS-WebApp 
+ git clone https://github.com/sheikhfaiz546/PMS-WebApp.git PMS-WebApp 
 ```
 Install all Packages & Dependencies
 ```
@@ -65,7 +66,7 @@ Many Technologies Needs \
 to Learn\
 to Cover\
 to Implement\
-to Experince\
+to Experience\
 to Convey\
 to Teach
 

@@ -1,0 +1,58 @@
+// =============== Project SCSS Variabls ===============
+@use "Styles/appVariables.scss" as *;
+
+.main_body {
+  display: flex;
+  justify-content: center;
+}
+.dashboard_main {
+  width: 1536px;
+  background-color: $primary_color;
+  min-height: 100vh;
+  display: flex;
+  padding: 30px;
+  padding-left: 0px;
+  .dashboard {
+    border-radius: 20px;
+    background-color: white;
+    flex-basis: 1300px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .dashboard_main {
+    padding: 18px 15px 18px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_body {
+    min-height: auto;
+  }
+  .dashboard_main {
+    border-radius: 0px;
+    background-color: lightgray;
+    padding: 0px;
+  }
+  .dashboard {
+    border-radius: 0px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .logoutButton {
+    margin-top: auto;
+    margin-bottom: 60px;
+  }
+  .sidebar {
+    .user_info {
+      p.user_name {
+        font-size: 14px;
+      }
+    }
+  }
+  .dashboard {
+    border-radius: 0px !important;
+    padding: 20px 15px !important;
+  }
+}
