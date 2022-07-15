@@ -22,7 +22,7 @@ const TopSavedUiCard = (props) => {
     <div className="topSavedUiCard">
       <div className="serviceInformation">
         <div className="iconImage">
-          <img src={icon} alt="Google Logo" />
+          <img src={process.env.PUBLIC_URL + icon} alt="Google Logo" />
         </div>
         <DetailChip
           value={

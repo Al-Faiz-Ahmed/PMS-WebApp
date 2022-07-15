@@ -24,6 +24,7 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "no-undef":0,
         "semi": ["error", "always"],
         "react/prop-types": 0
     }

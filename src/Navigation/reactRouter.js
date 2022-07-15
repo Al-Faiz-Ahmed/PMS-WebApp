@@ -3,7 +3,7 @@ import Categories from "Pages/Categories";
 import CategoryDetail from "Pages/CategoryDetail";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "../Pages/Dashboard";
-import Login from "../Pages/Login";
+import Login from "../Pages/login";
 import { GlobalContext } from "Context/context";
 import { SAVE_DATA_FROM_BACKEND } from "Context/types";
 import WebData from "../SampleData/sampleWebData.json";

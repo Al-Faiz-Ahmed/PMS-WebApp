@@ -13,7 +13,7 @@ const MoreSavedCard = (props) => {
       {variant === "primary" && (
         <div className="moreSavedcard">
           <Link to={pageLink}>
-            <img src={source} alt="" />
+            <img src={process.env.PUBLIC_URL + source} alt="" />
           </Link>
         </div>
       )}

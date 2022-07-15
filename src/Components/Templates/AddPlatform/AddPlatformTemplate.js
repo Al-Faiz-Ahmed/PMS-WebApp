@@ -96,7 +96,7 @@ const AddPlatformTemplate = () => {
                     }}
                   >
                     {logoImage ? (
-                      <img src={logoImage} />
+                      <img src={process.env.PUBLIC_URL + logoImage} />
                     ) : (
                       <>
                         <h4>Logo</h4>
@@ -199,7 +199,7 @@ const AddPlatformTemplate = () => {
                 <div className="image-picker-Section">
                   {selectedImage[0] ? (
                     <div className="imageContainer">
-                      <img src={selectedImage[0]} alt={selectedImage[1]} />
+                      <img src={process.env.PUBLIC_URL + selectedImage[0]} alt={selectedImage[1]} />
                     </div>
                   ) : (
                     <label htmlFor="imagePicker">

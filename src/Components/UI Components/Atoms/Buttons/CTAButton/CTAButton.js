@@ -19,7 +19,7 @@ const CTAButton = (props) => {
       )}
       {variant === "loading" && (
         <button className={`loading ctaButton ${fullWidth}`} style={style}>
-          <img src={'/Assets/Images/spinner.svg'} alt="spinner" width="20" />
+          <img src={process.env.PUBLIC_URL + '/Assets/Images/spinner.svg'} alt="spinner" width="20" />
         </button>
       )}
       {variant === "disable" && (

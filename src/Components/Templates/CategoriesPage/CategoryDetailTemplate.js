@@ -92,7 +92,7 @@ const CategoryDetailTemplate = () => {
           <div className="mainSection">
             <div className="header">
               <img
-                src={serviceProvider?.image}
+                src={process.env.PUBLIC_URL + serviceProvider?.image}
                 alt={serviceProvider?.categoryName}
               />
               <h3>{serviceProvider?.categoryName}</h3>

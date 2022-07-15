@@ -64,7 +64,7 @@ const LoginPageTemplate = () => {
             />
           </div>
           <div className="relatedImage">
-            <img src={"/Assets/Images/security-vector-svg.svg"} alt="" />
+            <img src={process.env.PUBLIC_URL + "/Assets/Images/security-vector-svg.svg"} alt="" />
           </div>
         </div>
       </div>
