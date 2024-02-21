@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://al-faiz-ahmed.github.io/PMS-WebApp/static/css/main.b965a49a.css",
+    "main.js": "https://al-faiz-ahmed.github.io/PMS-WebApp/static/js/main.3a427ed6.js",
+    "static/js/453.1c282128.chunk.js": "https://al-faiz-ahmed.github.io/PMS-WebApp/static/js/453.1c282128.chunk.js",
+    "index.html": "https://al-faiz-ahmed.github.io/PMS-WebApp/index.html",
+    "main.b965a49a.css.map": "https://al-faiz-ahmed.github.io/PMS-WebApp/static/css/main.b965a49a.css.map",
+    "main.3a427ed6.js.map": "https://al-faiz-ahmed.github.io/PMS-WebApp/static/js/main.3a427ed6.js.map",
+    "453.1c282128.chunk.js.map": "https://al-faiz-ahmed.github.io/PMS-WebApp/static/js/453.1c282128.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b965a49a.css",
+    "static/js/main.3a427ed6.js"
+  ]
+}
